@@ -67,8 +67,8 @@ jobs:
       - name: Commit Directory Changes
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git config --local user.email "195569807@qq.com"
-          git config --local user.name "jinwei26"
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
           git pull origin master
           git add ./spd
           git add ./utils/Country.mmdb
@@ -94,8 +94,8 @@ jobs:
       - name: Commit Eternity changes
         if: steps.changesE.outputs.changed == 'true'
         run: |
-          git config --local user.email "195569807@qq.com"
-          git config --local user.name "jinwei26"
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
           git pull origin master
           git add EternityBase
           git add Eternity
@@ -121,8 +121,8 @@ jobs:
       
       - name: Commit Final changes
         run: |
-          git config --local user.email "195569807@qq.com"
-          git config --local user.name "jinwei26"
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
           git pull origin master
           git add Eternity.yml
           git add Eternity
