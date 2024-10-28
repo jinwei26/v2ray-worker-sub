@@ -69,8 +69,8 @@ jobs:
       - name: Commit and push providers if changed
         if: steps.git-diff.outputs.changed == 'true'
         run: |
-          git config --local user.name 'GitHub Actions'
-          git config --local user.email 'github-actions@github.com'
+          git config --local user.name 'jinwei26'
+          git config --local user.email '195569807@qq.com'
           git add .
           git add providers/providers
           git pull
@@ -90,8 +90,8 @@ jobs:
       - name: Commit and push if changed
         if: steps.changes64.outputs.changed == 'true'
         run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'github-actions@github.com'
+          git config --local user.name 'jinwei26'
+          git config --local user.email '195569807@qq.com'
           git add -A
           git commit -m "Encode to base64"
           git push
@@ -140,8 +140,8 @@ jobs:
       - name: Commit and push if changed
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'github-actions@github.com'
+          git config --local user.name 'jinwei26'
+          git config --local user.email '195569807@qq.com'
           git add -A
           git commit -m "Update IR"
           git push
@@ -159,8 +159,8 @@ jobs:
       - name: Commit and push if changed
         if: steps.changesir.outputs.changed == 'true'
         run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'github-actions@github.com'
+          git config --local user.name 'jinwei26'
+          git config --local user.email '195569807@qq.com'
           git add -A
           git commit -m "Update IR"
           git push
