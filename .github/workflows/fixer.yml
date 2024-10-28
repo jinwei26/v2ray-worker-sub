@@ -32,8 +32,8 @@ jobs:
 
       - name: Commit Sub
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Github Action"
+          git config --local user.email "195569807@qq.com"
+          git config --local user.name "jinwei26"
           git add -A
           git diff --quiet && get diff -staged --quiet || git commit -m "Fix Sub"
           git push
@@ -54,8 +54,8 @@ jobs:
 
       - name: Commit Base64 Changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Github Action"
+          git config --local user.email "195569807@qq.com"
+          git config --local user.name "jinwei26"
           git add -A
           git diff --quiet && get diff -staged --quiet || git commit -m "Convert to Base64"
           git push
