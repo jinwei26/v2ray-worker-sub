@@ -18,7 +18,8 @@ jobs:
 
       - name: Fetch content from URL and update file
         run: |
-          # Fetch content from URL
+          # 从一个由环境变量 secrets.INPUT_URL 指定的 URL 下载内容，然后使用 base64 解码，
+          # 并将解码后的内容保存到当前目录下的 ./sub 文件中。
           curl -L "${{ secrets.INPUT_URL }}" | base64 --decode > ./sub
 
       - name: Set up Python
